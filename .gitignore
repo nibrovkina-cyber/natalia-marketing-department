@@ -1,0 +1,7 @@
+_zubair_reference/
+_build/__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+.env
+.env.local

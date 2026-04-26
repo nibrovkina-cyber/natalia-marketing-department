@@ -50,7 +50,7 @@ version: 1.0.0
 00:08–00:14  Solution: 16 точек-агентов появляются последовательно (gold dots, pulse)
 00:14–00:22  Process: 3 шага — бриф → AI работает → готовый лендинг (split screens)
 00:22–00:28  Proof: «MEDEA Dent: ×3.4 заявок за 90 дней» (number counter animation)
-00:28–00:30  CTA: «natalia.com/tool — попробовать бесплатно» (call-to-action button slide-in)
+00:28–00:30  CTA: «natashabrovkina.com/tool — попробовать бесплатно» (call-to-action button slide-in)
 ```
 
 Каждый кадр имеет:
@@ -170,7 +170,7 @@ node motion-export.mjs motion-<slug>.html --duration 30 --output motion-<slug>.m
 
 ## Examples
 
-### 30-секундный hero-explainer для natalia.com
+### 30-секундный hero-explainer для natashabrovkina.com
 
 ```
 00:00–00:03  «Удвоила выручку 20 бизнесов.» (Inter 96px, fade + 0.5s pause)
@@ -179,5 +179,5 @@ node motion-export.mjs motion-<slug>.html --duration 30 --output motion-<slug>.m
 00:12–00:18  Под каждой dot текст-роль появляется: «копирайт» «SEO» «дизайн»...
 00:18–00:24  «Методология Огилви/Шварца/Хопкинса» mono-line under
 00:24–00:28  «MEDEA Dent · ×3.4 заявок за 90 дней» (counter from 1 to 3.4)
-00:28–00:30  «natalia.com/tool — попробовать бесплатно» (CTA pill)
+00:28–00:30  «natashabrovkina.com/tool — попробовать бесплатно» (CTA pill)
 ```

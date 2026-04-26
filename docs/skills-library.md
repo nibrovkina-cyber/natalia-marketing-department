@@ -19,7 +19,7 @@ Routine `npm run sync-notion-library` будет проверять измене
 | Name | Category | Description | Version | Path |
 |---|---|---|---|---|
 | natalia | Orchestrator | Маркетинговый отдел из 21 AI-агента + campaign-manager оркестратор для русского SMB. Вызывает foundation → function → specialty. | 1.1.0 | skills/natalia/SKILL.md |
-| natalia-brand-voice | Foundation | Voice, позиционирование, tone-of-voice фундамент natalia.com. Палитра, типографика, что говорим / что НЕ говорим. Используется как контекст всеми остальными skills. | 1.0.0 | skills/natalia-brand-voice/SKILL.md |
+| natalia-brand-voice | Foundation | Voice, позиционирование, tone-of-voice фундамент natashabrovkina.com. Палитра, типографика, что говорим / что НЕ говорим. Используется как контекст всеми остальными skills. | 1.0.0 | skills/natalia-brand-voice/SKILL.md |
 | natalia-design-system | Foundation | Дизайн-система: токены палитры (warm-AI default + navy alt), типографика (Inter Display + Playfair italic + JetBrains Mono), компоненты, motion-правила. | 1.0.0 | skills/natalia-design-system/SKILL.md |
 | natalia-positioning | Function | Стратегия позиционирования. Находит угол, который отличает продукт. 8 фреймворков по Огилви/Шварцу/Хопкинсу. | 1.0.0 | skills/natalia-positioning/SKILL.md |
 | natalia-copy | Function | Прямой отклик копирайтинг. Тексты по Schwartz (5 уровней осведомлённости), Hopkins (Scientific Advertising), Ogilvy (заголовок 80%). | 1.0.0 | skills/natalia-copy/SKILL.md |
@@ -78,7 +78,7 @@ Routine `npm run sync-notion-library` будет проверять измене
 
 ## Author
 
-**Наталья Бровкина** · [natalia.com](https://natalia.com) · [@NATASHABROVKINA](https://t.me/NATASHABROVKINA)
+**Наталья Бровкина** · [natashabrovkina.com](https://natashabrovkina.com) · [@NATASHABROVKINA](https://t.me/NATASHABROVKINA)
 
 ## License
 

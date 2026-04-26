@@ -1,6 +1,6 @@
 ---
 name: natalia-design-system
-description: Дизайн-система natalia.com — токены, типографика, компоненты, layout-правила. Извлечена из Claude Design v2. Используется любым агентом который генерит HTML/CSS (carousel, motion, landing, ad creative).
+description: Дизайн-система natashabrovkina.com — токены, типографика, компоненты, layout-правила. Извлечена из Claude Design v2. Используется любым агентом который генерит HTML/CSS (carousel, motion, landing, ad creative).
 version: 1.0.0
 ---
 

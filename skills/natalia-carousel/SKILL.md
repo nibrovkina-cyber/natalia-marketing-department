@@ -6,7 +6,7 @@ version: 1.0.0
 
 # natalia · carousel design
 
-Превращает один контент-посыл в **карусель из 5-10 слайдов** с единым визуальным языком natalia.com.
+Превращает один контент-посыл в **карусель из 5-10 слайдов** с единым визуальным языком natashabrovkina.com.
 
 ## Когда использовать
 
@@ -65,7 +65,7 @@ version: 1.0.0
 Структура каждого слайда:
 - Top: small mono kicker (номер слайда «01 / 07» или категория)
 - Middle: главное содержимое (Inter Display headline 48-64px + body 17-22px)
-- Bottom: brand mark «natalia.com» или авторская подпись «— Наталья Бровкина»
+- Bottom: brand mark «natashabrovkina.com» или авторская подпись «— Наталья Бровкина»
 
 Код использует `<style>` inline с CSS-переменными из design-system + Google Fonts link.
 
@@ -133,4 +133,4 @@ node carousel-export.mjs carousel-<slug>.html
 4. **Frame 1 (Schwartz):** «5 уровней — от Unaware до Most Aware. Каждый требует свой headline.»
 5. **Frame 2 (Ogilvy):** «Заголовок = 80% бюджета. Если он не работает — остальное не прочитают.»
 6. **Frame 3 (proof):** «Стоматология MEDEA: переписали hero под Problem Aware. Заявок ×3.4 за 90 дней.»
-7. **CTA:** «Полный разбор методологии — natalia.com/method. Бесплатно.»
+7. **CTA:** «Полный разбор методологии — natashabrovkina.com/method. Бесплатно.»

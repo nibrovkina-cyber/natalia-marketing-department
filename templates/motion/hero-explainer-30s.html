@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>natalia · motion template · hero explainer 30s</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  :root {
+    --bg: #F7F4EE;
+    --bg-card: #FBF9F4;
+    --ink: #1F1B16;
+    --ink-2: #4A4339;
+    --ink-3: #8A8175;
+    --accent: #D9542B;
+    --halo: rgba(217,84,43,.18);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--ink); }
+  body { font-family: 'Inter', sans-serif; }
+
+  .stage {
+    width: 100vw; height: 100vh;
+    background: var(--bg);
+    color: var(--ink);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .scene {
+    position: absolute;
+    inset: 0;
+    padding: 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .8s ease;
+  }
+  .scene.active { opacity: 1; }
+
+  .italic { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 500; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+
+  /* Scene 1 — hook */
+  .s1 h1 {
+    font-size: clamp(48px, 8vw, 128px);
+    font-weight: 700;
+    line-height: 0.95;
+    letter-spacing: -0.035em;
+    margin: 0;
+    max-width: 18ch;
+  }
+  .s1 .word-2 {
+    display: block;
+    margin-top: 8px;
+    color: var(--ink-3);
+    animation: slideIn 0.7s ease 1s both;
+  }
+
+  /* Scene 2 — problem */
+  .s2 h2 {
+    font-size: clamp(40px, 6vw, 88px);
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin: 0;
+    max-width: 22ch;
+  }
+
+  /* Scene 3 — agents grid */
+  .s3 { align-items: center; justify-content: center; text-align: center; }
+  .s3 .label {
+    font-size: 13px;
+    color: var(--accent);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  .s3 .grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 18px;
+    max-width: 480px;
+  }
+  .s3 .dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: 0;
+    animation: dotIn 0.4s ease forwards;
+  }
+
+  /* Scene 4 — number counter */
+  .s4 { align-items: center; justify-content: center; text-align: center; }
+  .s4 .num {
+    font-size: clamp(120px, 22vw, 320px);
+    font-weight: 700;
+    letter-spacing: -0.045em;
+    line-height: 0.9;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+  }
+  .s4 .label {
+    margin-top: 24px;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(20px, 2.5vw, 32px);
+    color: var(--ink-2);
+    max-width: 24ch;
+  }
+
+  /* Scene 5 — CTA */
+  .s5 {
+    background: var(--ink);
+    color: var(--bg);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .s5 h2 {
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 600;
+    margin: 0 0 32px;
+    color: var(--bg);
+  }
+  .s5 .cta {
+    display: inline-block;
+    padding: 20px 32px;
+    background: var(--accent);
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.005em;
+  }
+
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes dotIn {
+    from { opacity: 0; transform: scale(0.4); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.2); opacity: 1; }
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+
+  <div class="scene s1" id="s1">
+    <h1>
+      Удвоила выручку 20&nbsp;бизнесов.
+      <span class="italic word-2">Без команды.</span>
+    </h1>
+  </div>
+
+  <div class="scene s2" id="s2">
+    <h2>Тратишь часы на копирайт, дизайн, SEO? <span class="italic">Один человек не может это всё одновременно.</span></h2>
+  </div>
+
+  <div class="scene s3" id="s3">
+    <div class="label">16 AI-агентов · работают параллельно</div>
+    <div class="grid" id="dotgrid"></div>
+  </div>
+
+  <div class="scene s4" id="s4">
+    <div class="num" id="counter">3,4×</div>
+    <div class="label">заявок в месяц после AI-редизайна.<br>MEDEA Dent · 90 дней.</div>
+  </div>
+
+  <div class="scene s5" id="s5">
+    <h2>natashabrovkina.com/tool — <span class="italic" style="color: var(--accent);">бесплатно</span></h2>
+    <a class="cta" href="#">Скачать на GitHub →</a>
+  </div>
+
+</div>
+
+<script>
+  // Storyboard timing (30 sec total)
+  const scenes = [
+    { id: 's1', start: 0,    end: 6000  }, // 0-6s hook
+    { id: 's2', start: 6000, end: 12000 }, // 6-12s problem
+    { id: 's3', start: 12000, end: 18000 }, // 12-18s agents
+    { id: 's4', start: 18000, end: 25000 }, // 18-25s proof
+    { id: 's5', start: 25000, end: 30000 }, // 25-30s CTA
+  ];
+
+  // Build dots grid
+  const grid = document.getElementById('dotgrid');
+  for (let i = 0; i < 16; i++) {
+    const d = document.createElement('div');
+    d.className = 'dot';
+    d.style.animationDelay = (12000 + i * 100) + 'ms';
+    d.style.animationName = 'dotIn, pulse';
+    d.style.animationDuration = '0.4s, 1.6s';
+    d.style.animationIterationCount = '1, infinite';
+    d.style.animationFillMode = 'forwards, none';
+    d.style.animationTimingFunction = 'ease, ease-in-out';
+    d.style.animationDelay = (12000 + i * 100) + 'ms, ' + (12500 + i * 100) + 'ms';
+    grid.appendChild(d);
+  }
+
+  // Activate scenes
+  function activate() {
+    const t = performance.now() - start;
+    scenes.forEach(s => {
+      const el = document.getElementById(s.id);
+      if (t >= s.start && t < s.end) el.classList.add('active');
+      else el.classList.remove('active');
+    });
+
+    // Counter animation for s4
+    if (t >= 18500 && t < 21500) {
+      const v = Math.min(3.4, ((t - 18500) / 3000) * 3.4).toFixed(1);
+      document.getElementById('counter').textContent = v.replace('.', ',') + '×';
+    }
+
+    if (t < 30000) requestAnimationFrame(activate);
+  }
+  const start = performance.now();
+  requestAnimationFrame(activate);
+</script>
+</body>
+</html>

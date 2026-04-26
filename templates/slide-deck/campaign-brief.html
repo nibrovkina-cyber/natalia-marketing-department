@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>natalia · campaign brief deck template</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,500&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  :root {
+    --bg: #F7F4EE;
+    --bg-card: #FBF9F4;
+    --surface: #EFEAE0;
+    --ink: #1F1B16;
+    --ink-2: #4A4339;
+    --ink-3: #8A8175;
+    --accent: #D9542B;
+    --accent-soft: rgba(217,84,43,.08);
+    --hairline: rgba(31,27,22,.10);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #2a2a2a; padding: 40px; font-family: 'Inter', sans-serif; }
+  .deck { display: grid; gap: 40px; max-width: 1280px; margin: 0 auto; }
+  .slide {
+    aspect-ratio: 16 / 9;
+    background: var(--bg);
+    color: var(--ink);
+    padding: 64px 80px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+  .slide-num {
+    position: absolute;
+    top: 32px;
+    right: 40px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-3);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .slide-mark {
+    position: absolute;
+    bottom: 32px;
+    left: 40px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-3);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-3); letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 24px; }
+  .italic { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 500; }
+  h1 { font-family: 'Inter', sans-serif; font-size: 80px; font-weight: 700; line-height: 1; letter-spacing: -0.035em; margin: 0; max-width: 18ch; }
+  h2 { font-family: 'Inter', sans-serif; font-size: 44px; font-weight: 600; line-height: 1.05; letter-spacing: -0.025em; margin: 0 0 32px; }
+  h3 { font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 12px; }
+  p, li { font-size: 17px; line-height: 1.55; color: var(--ink-2); margin: 0; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; flex: 1; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; flex: 1; }
+  .stat { padding: 24px 28px; background: var(--bg-card); border: 1px solid var(--hairline); }
+  .stat .num { font-size: 56px; font-weight: 700; letter-spacing: -0.035em; color: var(--accent); font-variant-numeric: tabular-nums; line-height: 1; margin-bottom: 8px; }
+  .stat .lbl { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-3); letter-spacing: 0.14em; text-transform: uppercase; }
+  ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+  li { padding-left: 32px; position: relative; }
+  li:before { content: ""; position: absolute; left: 0; top: 12px; width: 18px; height: 2px; background: var(--accent); }
+  .speaker {
+    margin-top: 24px;
+    padding: 16px 20px;
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    font-size: 13px;
+    color: var(--ink-2);
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <!-- 01 — TITLE -->
+  <div class="slide">
+    <div class="slide-num">01 / 10</div>
+    <div class="eyebrow">/ Кампания · бриф</div>
+    <h1>Запуск онлайн-курса <span class="italic">по B2B-продажам</span></h1>
+    <p style="margin-top: 32px; font-size: 22px;">Бюджет 200 000 ₽ · 60 дней · Москва, СПб</p>
+    <div class="slide-mark">Наталья Бровкина · natashabrovkina.com</div>
+  </div>
+
+  <!-- 02 — POSITIONING -->
+  <div class="slide">
+    <div class="slide-num">02 / 10</div>
+    <div class="eyebrow">/ Позиционирование</div>
+    <h2>Курс для B2B-менеджеров которые <span class="italic">устали слать КП в пустоту</span>.</h2>
+    <p style="max-width: 80ch;">Учим квалифицировать лида до встречи. 5 фреймворков по Sandler/MEDDIC/Challenger. Адаптировано под российский рынок и циклы 2-6 недель.</p>
+    <div class="speaker">SPEAKER NOTES: Назвать конкретного аватара — например, B2B-менеджер 2-5 лет опыта в IT-услугах. Закрыть возражение «нам и так норм» цифрой Hopkins.</div>
+  </div>
+
+  <!-- 03 — ICP -->
+  <div class="slide">
+    <div class="slide-num">03 / 10</div>
+    <div class="eyebrow">/ Целевая аудитория · ICP</div>
+    <h2>Кто покупает</h2>
+    <div class="grid-2">
+      <div>
+        <h3>Демография</h3>
+        <ul>
+          <li>B2B-менеджеры 27-40 лет</li>
+          <li>2-5 лет опыта в продажах</li>
+          <li>Москва, СПб (расширение по запросу)</li>
+          <li>Доход 80-150 тыс ₽/мес</li>
+        </ul>
+      </div>
+      <div>
+        <h3>По Schwartz · уровень 2-3</h3>
+        <ul>
+          <li>Знают что в продажах есть «системы»</li>
+          <li>Не знают какая работает в РФ</li>
+          <li>Главная боль: длинный цикл сделки</li>
+          <li>Триггер: квартал не закрыли</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-mark">Шварц · Hopkins · Ogilvy methodology</div>
+  </div>
+
+  <!-- 04 — KPI -->
+  <div class="slide">
+    <div class="slide-num">04 / 10</div>
+    <div class="eyebrow">/ KPI · цели за 60 дней</div>
+    <h2>Что мерим</h2>
+    <div class="grid-3">
+      <div class="stat">
+        <div class="num">150</div>
+        <div class="lbl">платных регистраций</div>
+      </div>
+      <div class="stat">
+        <div class="num">280%</div>
+        <div class="lbl">ROMI к концу периода</div>
+      </div>
+      <div class="stat">
+        <div class="num">1 200₽</div>
+        <div class="lbl">CPL — целевой</div>
+      </div>
+    </div>
+    <div class="speaker">SPEAKER NOTES: Hopkins — все цифры verifiable. Указать что лиды считаются через Roistat, оплаты через ЮKassa.</div>
+  </div>
+
+  <!-- 05 — CHANNEL MIX -->
+  <div class="slide">
+    <div class="slide-num">05 / 10</div>
+    <div class="eyebrow">/ Каналы · распределение бюджета</div>
+    <h2>Channel mix</h2>
+    <ul style="grid-template-columns: 1fr 1fr; display: grid; gap: 20px;">
+      <li><b>Яндекс.Директ поиск (35%)</b> · 70k ₽ · most aware · CPL 800-1500</li>
+      <li><b>VK Ads таргет (25%)</b> · 50k ₽ · problem aware · CPL 600-1200</li>
+      <li><b>Telegram-канал органика (15%)</b> · 30k ₽ контент · solution aware</li>
+      <li><b>TenChat посты (10%)</b> · 20k ₽ · B2B-аудитория · кейсы</li>
+      <li><b>Email-серия welcome (5%)</b> · 10k ₽ инструмент</li>
+      <li><b>Резерв на тесты (10%)</b> · 20k ₽</li>
+    </ul>
+  </div>
+
+  <!-- 06 — FUNNEL -->
+  <div class="slide">
+    <div class="slide-num">06 / 10</div>
+    <div class="eyebrow">/ Воронка</div>
+    <h2>Funnel mapping</h2>
+    <p style="font-family: 'JetBrains Mono', monospace; font-size: 18px; line-height: 2; color: var(--ink);">
+      Trafiс <span style="color: var(--accent)">→ 12 000 кликов</span><br>
+      Lead-magnet <span style="color: var(--accent)">→ 2 400 регистраций (20%)</span><br>
+      Email-серия <span style="color: var(--accent)">→ 480 заявок на курс (20%)</span><br>
+      Звонок-квал <span style="color: var(--accent)">→ 240 квалифицированных (50%)</span><br>
+      Оплата <span style="color: var(--accent)">→ 156 покупок (65%)</span>
+    </p>
+    <div class="speaker">SPEAKER NOTES: Каждый этап = свой Schwartz-уровень. Слабый переход — вебинар→оплата (тут будет основной A/B-тест на офферах).</div>
+  </div>
+
+  <!-- 07 — CONTENT CALENDAR -->
+  <div class="slide">
+    <div class="slide-num">07 / 10</div>
+    <div class="eyebrow">/ Контент-план · 8 недель</div>
+    <h2>Что выкладываем</h2>
+    <ul style="grid-template-columns: 1fr 1fr; display: grid; gap: 14px;">
+      <li><b>Telegram</b> · 3 поста/нед · case-разборы + framework + вопросы</li>
+      <li><b>VK Ads</b> · 4 креатива в первые 2 недели + 4 креатива на масштаб</li>
+      <li><b>TenChat</b> · 1 длинный post/нед — личный опыт</li>
+      <li><b>Email welcome</b> · 5 писем по Schwartz-карте</li>
+      <li><b>Лендинг</b> · 1 базовый + 1 a/b к месяцу 2</li>
+      <li><b>Live</b> · 1 демо-вебинар на 4-й неделе</li>
+    </ul>
+  </div>
+
+  <!-- 08 — BUDGET -->
+  <div class="slide">
+    <div class="slide-num">08 / 10</div>
+    <div class="eyebrow">/ Бюджет · 200 000 ₽ за 60 дней</div>
+    <h2>Allocation</h2>
+    <div class="grid-2">
+      <div>
+        <h3>Trafiс (60% · 120 000 ₽)</h3>
+        <ul>
+          <li>Яндекс.Директ — 70 000 ₽</li>
+          <li>VK Ads — 50 000 ₽</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Контент-производство (20% · 40 000 ₽)</h3>
+        <ul>
+          <li>Дизайнер креативов</li>
+          <li>Видеомонтаж промо</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Инструменты (10% · 20 000 ₽)</h3>
+        <ul>
+          <li>Roistat · Calltouch · ЮKassa</li>
+          <li>Email-сервис</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Резерв (10% · 20 000 ₽)</h3>
+        <ul>
+          <li>На тесты гипотез</li>
+          <li>На extra-креативы</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 09 — ACCOUNTABILITY -->
+  <div class="slide">
+    <div class="slide-num">09 / 10</div>
+    <div class="eyebrow">/ Кто что делает</div>
+    <h2>Accountability</h2>
+    <ul>
+      <li><b>Неделя 1</b> · позиционирование, лендинг — Наталья + agentLanding</li>
+      <li><b>Неделя 2</b> · email-серия, лид-магнит — agentEmail + agentLeadmagnet</li>
+      <li><b>Неделя 3</b> · креативы, запуск трафика — agentAds</li>
+      <li><b>Недели 4-6</b> · контент-план Telegram + VK — agentSocial + agentAtomizer</li>
+      <li><b>Недели 7-8</b> · оптимизация и retention — agentFunnel + agentEmail</li>
+    </ul>
+  </div>
+
+  <!-- 10 — NEXT STEP -->
+  <div class="slide" style="background: var(--ink); color: var(--bg);">
+    <div class="slide-num" style="color: rgba(247,244,238,.55)">10 / 10</div>
+    <div class="eyebrow" style="color: var(--accent)">/ Дальше</div>
+    <h1 style="color: var(--bg);">Запускаем <span class="italic" style="color: var(--accent)">в&nbsp;понедельник</span></h1>
+    <p style="margin-top: 32px; font-size: 22px; color: rgba(247,244,238,.85);">Первый артефакт — лендинг — за 7 дней. Дальше каждую неделю ровно один deliverable.</p>
+    <div class="slide-mark" style="color: rgba(247,244,238,.55)">Наталья Бровкина · @NATASHABROVKINA · natashabrovkina.com</div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>natalia · carousel template · case study 5 slides</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,500&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  :root {
+    --bg: #F7F4EE;
+    --bg-card: #FBF9F4;
+    --ink: #1F1B16;
+    --ink-2: #4A4339;
+    --ink-3: #8A8175;
+    --accent: #D9542B;
+    --hairline: rgba(31,27,22,.10);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #2a2a2a; padding: 40px; font-family: 'Inter', sans-serif; }
+  .stack { display: grid; gap: 40px; max-width: 1080px; margin: 0 auto; }
+  .slide {
+    aspect-ratio: 1 / 1;
+    background: var(--bg);
+    color: var(--ink);
+    padding: 80px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+  .slide-num { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--ink-3); letter-spacing: 0.14em; text-transform: uppercase; }
+  .slide h1, .slide h2 { font-family: 'Inter', sans-serif; font-weight: 600; letter-spacing: -0.025em; line-height: 1.05; margin: 0; }
+  .slide h1 { font-size: 80px; }
+  .slide h2 { font-size: 56px; }
+  .italic-display { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 500; letter-spacing: -0.01em; }
+  .slide p { font-size: 22px; line-height: 1.4; color: var(--ink-2); margin: 0; max-width: 22ch; }
+  .footer-mark { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-3); letter-spacing: 0.14em; text-transform: uppercase; }
+  .big-num { font-size: 280px; font-weight: 600; letter-spacing: -0.045em; line-height: 0.9; color: var(--accent); font-variant-numeric: tabular-nums; }
+  .stat-block { display: grid; gap: 8px; }
+  .stat-label { font-family: 'JetBrains Mono', monospace; font-size: 14px; color: var(--ink-3); letter-spacing: 0.14em; text-transform: uppercase; }
+  .stat-value { font-size: 56px; font-weight: 600; letter-spacing: -0.025em; }
+</style>
+</head>
+<body>
+<div class="stack">
+
+  <!-- 01 — COVER -->
+  <div class="slide">
+    <div>
+      <div class="slide-num">01 / 05 · case · MEDEA Dent</div>
+    </div>
+    <div class="big-num">×3,4</div>
+    <p style="font-size:32px;font-style:italic;color:var(--ink-2)">заявок в месяц после AI-редизайна.</p>
+    <div class="footer-mark">Стоматология · Покровка · Москва · 90 дней</div>
+  </div>
+
+  <!-- 02 — BEFORE -->
+  <div class="slide">
+    <div>
+      <div class="slide-num">02 / 05 · до</div>
+    </div>
+    <h2>Tilda-домен. Шаблонные отзывы. Цены <span class="italic-display">спрятаны</span>.</h2>
+    <p>Hero в первые 5 секунд не отвечал на главный вопрос пациента: «зачем мне сюда».</p>
+  </div>
+
+  <!-- 03 — WHAT CHANGED -->
+  <div class="slide">
+    <div>
+      <div class="slide-num">03 / 05 · что изменили</div>
+    </div>
+    <h2>Hero под <span class="italic-display">Problem aware</span> по Шварцу.</h2>
+    <p>Врачи в hero · прозрачные цены · FAQ закрывает 6 главных возражений · 0 ₽ консультация как proof.</p>
+  </div>
+
+  <!-- 04 — RESULTS -->
+  <div class="slide" style="background: var(--ink); color: var(--bg);">
+    <div>
+      <div class="slide-num" style="color: rgba(247,244,238,.55)">04 / 05 · результат за 90 дней</div>
+    </div>
+    <div style="display:grid;gap:48px;">
+      <div class="stat-block">
+        <div class="stat-label" style="color: var(--accent)">заявок / мес</div>
+        <div class="stat-value" style="color: var(--bg)">×3,4</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-label" style="color: var(--accent)">время на сайте</div>
+        <div class="stat-value" style="color: var(--bg)">+58%</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-label" style="color: var(--accent)">средний чек</div>
+        <div class="stat-value" style="color: var(--bg)">+22%</div>
+      </div>
+    </div>
+    <div class="footer-mark" style="color: rgba(247,244,238,.55)">— клиника MEDEA Dent</div>
+  </div>
+
+  <!-- 05 — CTA -->
+  <div class="slide" style="background: var(--bg-card);">
+    <div>
+      <div class="slide-num">05 / 05 · cta</div>
+    </div>
+    <h2>Хочешь такой же разбор <span class="italic-display">для своего бизнеса</span>?</h2>
+    <p>natashabrovkina.com/gallery — все кейсы открыто. Telegram @NATASHABROVKINA — обсудим твой.</p>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 ---
 name: natalia-brand-voice
-description: Brand voice и tone-of-voice фундамент natalia.com. Определяет КАК пишут все маркетинговые агенты — palette, типографика, voice, что говорим / что НЕ говорим. Используется как контекст для всех остальных natalia-* skills.
+description: Brand voice и tone-of-voice фундамент natashabrovkina.com. Определяет КАК пишут все маркетинговые агенты — palette, типографика, voice, что говорим / что НЕ говорим. Используется как контекст для всех остальных natalia-* skills.
 version: 1.0.0
 ---
 
@@ -11,7 +11,7 @@ version: 1.0.0
 ## Позиционирование
 
 - **Имя:** Natalia Brovkina
-- **Компания:** natalia.com — AI Marketing Studio
+- **Компания:** natashabrovkina.com — AI Marketing Studio
 - **Города:** Москва, Лос-Анджелес
 - **Категория:** студия-фрилансер с AI-командой, не агентство и не SaaS
 - **Telegram:** [@NATASHABROVKINA](https://t.me/NATASHABROVKINA)

@@ -1,6 +1,6 @@
 ---
 name: natalia
-description: Маркетинговый отдел из 21 AI-агента + campaign-manager оркестратор для русского SMB. Методология Ogilvy/Schwartz/Hopkins. Адаптировано под РФ-каналы (Яндекс.Директ, VK, Telegram, ЮKassa). Часть проекта natalia.com от Натальи Бровкиной. Open source MIT.
+description: Маркетинговый отдел из 21 AI-агента + campaign-manager оркестратор для русского SMB. Методология Ogilvy/Schwartz/Hopkins. Адаптировано под РФ-каналы (Яндекс.Директ, VK, Telegram, ЮKassa). Часть проекта natashabrovkina.com от Натальи Бровкиной. Open source MIT.
 version: 1.1.0
 ---
 
@@ -147,7 +147,7 @@ version: 1.1.0
 ## Author & License
 
 **Наталья Бровкина**
-- Сайт: [natalia.com](https://natalia.com)
+- Сайт: [natashabrovkina.com](https://natashabrovkina.com)
 - Telegram: [@NATASHABROVKINA](https://t.me/NATASHABROVKINA)
 - GitHub: [nibrovkina-cyber/natalia-marketing-department](https://github.com/nibrovkina-cyber/natalia-marketing-department)
 

@@ -1,16 +1,16 @@
 # natalia · marketing department
 
-**Бесплатный AI-маркетинговый отдел из 16 агентов** для малого и среднего бизнеса в России. Open source. MIT лицензия.
+**Бесплатный AI-маркетинговый отдел из 21 агента** для малого и среднего бизнеса в России. Open source. MIT лицензия.
 
 Скачивай → копируй в `~/.claude/skills/` → запускай в Claude Code. Никакого аккаунта, никакой подписки. Работает локально с твоим Anthropic API ключом.
 
-> **Часть проекта [natashabrovkina.com](https://natashabrovkina.com)** — AI Marketing Studio Натальи Бровкиной. Это бесплатная версия. Платный hosted-инструмент с UI и оплатой через ЮKassa: [скоро](https://natashabrovkina.com/pricing).
+> **Часть проекта [natashabrovkina.com](https://natashabrovkina.com)** — AI Marketing Studio Натальи Бровкиной. Это бесплатная версия. Hosted-версия с UI запускается летом 2026 — записаться в waitlist на [natashabrovkina.com/waitlist](https://natashabrovkina.com/waitlist).
 
 ---
 
 ## Что внутри
 
-16 узких агентов на методологии **Ogilvy / Schwartz / Hopkins**:
+21 узкий агент на методологии **Ogilvy / Schwartz / Hopkins**:
 
 | # | Команда | Что делает |
 |---|---|---|
@@ -30,8 +30,13 @@
 | 14 | `/natalia-newsletter` | Контентная рассылка которую ждут |
 | 15 | `/natalia-webdesign` | Опиши бизнес — получи готовый HTML-лендинг |
 | 16 | `/natalia-proposal` | КП которое читают и на которое соглашаются |
+| 17 | `/natalia-brand-voice` | Voice/tone-фундамент — как пишут все агенты |
+| 18 | `/natalia-design-system` | Дизайн-токены и компоненты для HTML/CSS-выходов |
+| 19 | `/natalia-campaign-planner` | Полная кампания из брифа: positioning → KPI → calendar |
+| 20 | `/natalia-carousel` | Карусель из 5–10 слайдов для Telegram / VK / TenChat |
+| 21 | `/natalia-motion` | HTML-видео (CSS keyframes + SVG) для лендинга / соцсетей |
 
-Плюс мастер-skill `natalia` — оркестратор который знает обо всех 16.
+Плюс мастер-skill `natalia` — оркестратор который знает обо всех 21.
 
 ---
 
@@ -139,7 +144,7 @@ Copy-Item -Path $src* -Destination $dst -Recurse -Force
 
 | Tier | Что | Цена |
 |---|---|---|
-| 🆓 **Бесплатно** (этот репо) | 16 skills локально, свой API ключ | 0 ₽ |
+| 🆓 **Бесплатно** (этот репо) | 21 skill локально, свой API ключ | 0 ₽ |
 | 💼 **Инструмент** ([app.natashabrovkina.com](https://app.natashabrovkina.com)) | Hosted UI, brand memory, team mode, без своего API ключа | 2 990 ₽ / мес |
 | 🤝 **Со мной** ([Telegram @NATASHABROVKINA](https://t.me/NATASHABROVKINA)) | Я лично делаю под ключ за 30 дней | 49 000 ₽ |
 

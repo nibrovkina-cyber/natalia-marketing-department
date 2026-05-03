@@ -47,7 +47,7 @@ version: 1.0.0
 ```
 00:00–00:03  Hook: «Удвоила выручку 20 бизнесов» (Inter Display 96px, fade-in)
 00:03–00:08  Problem: «Тратишь часы на копирайт?» (Playfair italic accent на «часы»)
-00:08–00:14  Solution: 16 точек-агентов появляются последовательно (gold dots, pulse)
+00:08–00:14  Solution: 21 точка-агент появляется последовательно (gold dots, pulse)
 00:14–00:22  Process: 3 шага — бриф → AI работает → готовый лендинг (split screens)
 00:22–00:28  Proof: «MEDEA Dent: ×3.4 заявок за 90 дней» (number counter animation)
 00:28–00:30  CTA: «natashabrovkina.com/tool — попробовать бесплатно» (call-to-action button slide-in)
@@ -75,7 +75,7 @@ version: 1.0.0
 |---|---|---|
 | **Type fade-in** | Headline появляется | `opacity: 0 → 1, translateY(20px → 0), 800ms ease-out` |
 | **Counter** | Цифра считается вверх | `@keyframes count + JS for incremental update` |
-| **Dot pulse** | 16 агентов | `scale 1 → 1.15 → 1, opacity 0.3 → 0.85, 2.6s infinite` |
+| **Dot pulse** | 21 агент | `scale 1 → 1.15 → 1, opacity 0.3 → 0.85, 2.6s infinite` |
 | **Underline draw** | Подчеркнуть слово | `width: 0 → 100%, 600ms ease` |
 | **Scale-reveal** | Logo / brand mark | `transform scale(0.9 → 1), opacity 0 → 1, 1s` |
 | **Marquee** | Бегущая строка социальных доказательств | `translateX 0 → -100%, 20s linear infinite` |
@@ -175,7 +175,7 @@ node motion-export.mjs motion-<slug>.html --duration 30 --output motion-<slug>.m
 ```
 00:00–00:03  «Удвоила выручку 20 бизнесов.» (Inter 96px, fade + 0.5s pause)
 00:03–00:06  «Без команды.» (Playfair italic 96px steel-color, slide-in)
-00:06–00:12  16 dots появляются grid 8×2, каждая pulse, gold accent
+00:06–00:12  21 dot появляется grid 7×3, каждая pulse, gold accent
 00:12–00:18  Под каждой dot текст-роль появляется: «копирайт» «SEO» «дизайн»...
 00:18–00:24  «Методология Огилви/Шварца/Хопкинса» mono-line under
 00:24–00:28  «MEDEA Dent · ×3.4 заявок за 90 дней» (counter from 1 to 3.4)

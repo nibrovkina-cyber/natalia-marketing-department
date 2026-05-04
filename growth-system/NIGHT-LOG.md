@@ -22,19 +22,29 @@
 
 ---
 
-## Cycle 2 — план (запускаю сейчас)
+## Cycle 2 — завершено
 
-1. Commit cycle 1 work using `git -C` pattern (no `cd`)
-2. Substack EN versions для топ-3 статей
-3. Reddit posts для 3 sub'ов (r/ClaudeAI, r/SmallBusiness, r/Entrepreneur)
-4. ScheduleWakeup на ~25 минут
+✅ Substack EN essay #1 опубликовано на Telegraph (как backup):
+   "A Moscow dentist, 47 weekly leads, and 21 markdown files" (~3200 слов, эссе формат)
+   https://telegra.ph/A-Moscow-dentist-47-weekly-leads-and-21-markdown-files-05-04
+✅ Substack EN essay #2 опубликовано на Telegraph:
+   "The 1966 book that explains why your marketing isn't working" (Schwartz deep-dive)
+   https://telegra.ph/The-1966-book-that-explains-why-your-marketing-isnt-working-05-04
+✅ Reddit post #1: r/ClaudeAI (technical framing для AI-аудитории)
+✅ Reddit post #2: r/SmallBusiness (case-study framing с дентом-кейсом)
+✅ Reddit post #3: r/Entrepreneur (build-in-public framing с pre-revenue прозрачностью)
+✅ Найден последний long-form video: C:\tmp_edit\final_yt.mp4
+
+**Что НЕ сделано:**
+- ❌ Substack EN-versions для оставшихся 5 статей (приоритет вниз — двух главных эссе достаточно для запуска Substack-канала)
+- ❌ Security audit ai-marketing-natalia (отложено в следующий cycle)
 
 ---
 
-## Cycle 3+ — план (после wakeup)
+## Cycle 3 — план
 
-- Security audit ai-marketing-natalia (3-я задача из MORNING-BRIEFING)
-- Substack EN для оставшихся 4 статей
-- Подготовить content для LinkedIn EN
-- Финальный wrap-up в утренний брифинг
+1. Security audit ai-marketing-natalia (env vars, CSRF, rate-limiting, SQL injection vectors)
+2. Дополнительные RU-локализации (TenChat вариаций под разные хуки)
+3. Финальный коммит + апдейт MORNING-BRIEFING с новыми артефактами
+4. Wakeup на ~25 минут или wrap-up если близко к 6 часов
 
